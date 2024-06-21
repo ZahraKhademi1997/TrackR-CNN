@@ -11,7 +11,7 @@ from datasets.util.BoundingBox import encode_bbox_as_mask, get_bbox_from_segment
 from datasets.util.Normalization import normalize, unnormalize
 
 
-class AbstractDataset(ABC):
+class AbstractDataset(ABC): # abc
   def __init__(self, config, subset, num_classes):
     self.summaries = []
     self.config = config
